@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_13_202602) do
+ActiveRecord::Schema.define(version: 2019_02_13_162747) do
 
   create_table "flats", force: :cascade do |t|
     t.string "name"
@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 2019_02_13_202602) do
     t.integer "number_of_guests"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.decimal "lon", default: "-73.5973836"
+    t.decimal "lat", default: "45.5242525"
   end
 
 end
